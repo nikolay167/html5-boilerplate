@@ -132,6 +132,7 @@ textarea {
    body {
      font-family: 'Montserrat', sans-serif;
    }
+
    header {
      position: fixed;
      top: 0;
@@ -149,7 +150,7 @@ textarea {
     position: absolute;
     top: 10px;
     right: 10%;
-    
+
     font-size: 14px;
     line-height: 20px;
     margin-top: 10px;
@@ -168,12 +169,71 @@ textarea {
      padding: 20px;
    }
 
+   section.video{
+     position: relative;
+   }
+
    section.video video {
        width: 100%;
    }
+section.video .black-overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
 
 
+}
 
+section .price-chart h1 {
+  font-size: 48px;
+text-align: center;
+}
+
+ section.features h1{
+  font-size: 48px;
+text-align: center;
+}
+
+section .Prototype {
+
+width: 320px;
+height: 568px;
+
+}
+
+  section div.price-chart .attr-col { margin: 110px 0 0; float: left; width: 200px; }
+  section div.price-chart .attr-col ul { background: #f4f4f4; font-weight: bold; font-size: 13px; border: 1px solid #d6d6d6; border-width: 1px 0px 1px 1px; -webkit-border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-bottomleft: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+  section div.price-chart .attr-col ul li { text-align: right; padding: 0 10px; border-bottom: 1px solid #d6d6d6; line-height: 45px; display: block; }
+  section div.price-chart .attr-col ul li.last { border-bottom: none; }
+  section div.price-chart .pt-table { padding-left: 200px; display: block; position: relative; }
+  section div.price-chart .pt-body { padding: 10px 0 0; }
+  section div.price-chart .pt-rows li { display: block; overflow: hidden;background: #fff; border-left: 2px solid #ccc; border-right: 2px solid #ccc; border-bottom: 1px solid #d9d9d9;  }
+  section div.price-chart .pt-rows li span { width: 24.8%; text-align: center; float: left; border-right: 1px solid #d9d9d9; display: block; line-height: 45px; height: 45px; }
+  section div.price-chart .pt-rows li.title { background: #666; font-size: 22px; color: #fff; font-weight: bold; -webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; border-top-left-radius: 5px; border-bottom: 2px solid #555; border-width: 0 0 2px; }
+  section div.price-chart .pt-rows li.title span { line-height: 50px; height: 50px; border: none; padding: 0 1px; text-shadow: 2px 2px #444; }
+  section div.price-chart .pt-rows li.fees { border-bottom: 1px solid #ccc; }
+  section div.price-chart .pt-rows li.fees span { line-height: 48px; height: 48px; background: #f7f7f7; font-size: 34px; font-weight: 700; font-family: Georgia, Arial, sans-serif; color: #4172a5; text-shadow: 2px 2px #fff; }
+  section div.price-chart .pt-rows li span.pt-yes { background: url(yes-no.gif) no-repeat center 12px; }
+  section div.price-chart .pt-rows li span.pt-no { background: url(yes-no.gif) no-repeat center -38px; }
+  section div.price-chart .pt-rows li.fin { border-bottom: 2px solid #d9d9d9; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 85px; }
+  section div.price-chart .pt-rows li span.pt-3x { width: 72%; float: left; text-align: center; border: none; }
+  section div.price-chart .pt-special { width: 23%; position: absolute; right: 0; top: 0; }
+  section div.price-chart .pt-special .pt-rows { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: 1px solid #a2b7ca; background: #f4faff;    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); padding-bottom: 10px; }
+  section div.price-chart .pt-special .pt-rows li { border-width: 0 0 1px; background: transparent; }
+  section div.price-chart .pt-special .pt-rows li.title { height: 58px; margin: 1px; background: #d0ebfe; color: #2a719d; font-size: 30px; line-height: 65px; text-align: center; border-bottom: 1px solid #bfd4e6; border-width: 0 0 1px; text-shadow: 2px 2px #e6f5ff; }
+  section div.price-chart .pt-special .pt-rows li.fees { border-bottom: 1px solid #bcd8ec; }
+  section div.price-chart .pt-special .pt-rows li.fees span { background: #ecf6fe; }
+  section div.price-chart .pt-special .pt-rows li.fin { border: none; text-align: center; }
+  section div.price-chart .pt-special .pt-rows li span { border: none; width: 100%; }
+
+
+  /* Simple Button CSS: */
+  .big-button { font-size: 24px; line-height: 50px; font-weight: 700; color: #fff; padding: 10px 20px; background: #4a980d; text-shadow: 2px 2px rgba(0, 0, 0, 0.3); border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #407718; text-decoration: none; position: relative; top: 18px; }
+  .big-button:hover { color: #fff; -moz-box-shadow: 0 0 20px #fffc00; -webkit-box-shadow: 0 0 20px #fffc00; box-shadow: 0 0 20px #fffc00; background: #6fbb2f; }
+  .big-button:active { position: relative; top: 1px; }
+
+}
 
 
 
