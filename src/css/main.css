@@ -174,33 +174,44 @@ textarea {
    }
 
    section.video video {
-       width: 100%;
+
+       width: 100vw;
         color: white;
    }
 section.video .black-overlay{
 position: absolute;
-width: 100%;
+width: 100vw;
 height: 100%;
-background: rgba(0,0,0,0.6);
-
-
+background: rgba(0,0,0,0.45);
 
 }
 
 section .price-chart h1 {
   font-size: 48px;
 text-align: center;
-height: 100vh;
-background: red;
+color:black;
+
 }
 
- section.features h1{
+ section.prototype h1{
   font-size: 48px;
+  text-align: center;
 
-      height: 100vh;
-      background: red;
+}
 
+section.prototype .video-container {
+  float: left;
+  width: 25%;
+  display: block;
+}
 
+section.prototype article {
+  float: left;
+  width: 75%;
+  display: block;
+}
+section.prototype article p h1 {
+  font-size: 48px;
 }
 
 section.prototype .video-container video{
@@ -219,6 +230,14 @@ section.prototype img {
 
 
 }
+section.prototype {
+  background-image: url(../img/12.jpg);
+  height: 100vw;
+  padding-top: 100px;
+
+
+}
+
 
   section div.price-chart .attr-col { margin: 110px 0 0; float: left; width: 200px; }
   section div.price-chart .attr-col ul { background: #f4f4f4; font-weight: bold; font-size: 13px; border: 1px solid #d6d6d6; border-width: 1px 0px 1px 1px; -webkit-border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-bottomleft: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
@@ -293,8 +312,59 @@ section.video .copy {
       /* font-size: 60px; */
       line-height: 22px;
 }
+/* section {
+    height: 100vh;
+} */
 
+section div.price-chart {
+    margin-right: 90px;
 
+}
+section div.pt-table {
+    margin-top: 142px;
+
+}
+section div.attr-col ul {
+    margin-top: 150px;
+    margin-left: 40px;
+
+}
+.form-container {
+    padding: 200px 0;
+    padding-bottom: 0;
+    background-image: url(../img/guy-pointing.jpg);
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+        margin-right: -12px;
+
+}
+.background-right {
+    padding: 200px 0;
+    padding-bottom: 0;
+    background-image: url(../img/new.jpg);
+    background-color: green;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+        margin-right: -12px;
+
+}
+.background-top {
+    padding: 200px 0;
+    padding-bottom: 0;
+    background-image: url(../img/new2.jpg);
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-position:top;
+        margin-right: -12px;
+
+}
+h1 {
+    padding-top: 62px;
+}
+section .price-chart {
+    height: 100vh;
+}
 
 
 
