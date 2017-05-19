@@ -1,113 +1,61 @@
-console.log('Hello world!');
-$(document).ready(function() {
-  console.log('ready');
   var headerHeight = $('header').height();
   console.log(headerHeight);
-  $('#about').click(function () {
+  $('#about').click(function() {
       console.log(this)
       $('html, body').animate({
           scrollTop: $('#prototype').offset().top
 
       }, 2000);
+
   });
 
-});
-console.log('Hello world!');
-$(document).ready(function() {
-  console.log('ready');
   var headerHeight = $('header').height();
   console.log(headerHeight);
-  $('#contact').click(function () {
+  $('#plans').click(function() {
       console.log(this)
       $('html, body').animate({
           scrollTop: $('#price-chart').offset().top
 
       }, 2000);
   });
+  var headerHeight = $('header').height();
+  console.log(headerHeight);
+  $('#contact').click(function() {
+      console.log(this)
+      $('html, body').animate({
+          scrollTop: $('#form-container').offset().top
 
-});
+      }, 2000);
+  });
 
-$(window).resize(function() {
-  console.log('resize');
+  $(window).resize(function() {
+      console.log('resize');
 
-});
+  });
+  jQuery(document).ready(function($){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 20,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
 
-$(window).scroll(function() {
-  console.log('scroll');
 
-});
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		//Navigation
-		menu: '#menu',
-		lockAnchors: false,
-		anchors:['firstPage', 'secondPage'],
-		navigation: false,
-		navigationPosition: 'right',
-		navigationTooltips: ['firstSlide', 'secondSlide'],
-		showActiveTooltip: false,
-		slidesNavigation: false,
-		slidesNavPosition: 'bottom',
 
-		//Scrolling
-		css3: true,
-		scrollingSpeed: 700,
-		autoScrolling: true,
-		fitToSection: true,
-		fitToSectionDelay: 1000,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
-		loopBottom: false,
-		loopTop: false,
-		loopHorizontal: true,
-		continuousVertical: false,
-		continuousHorizontal: false,
-		scrollHorizontally: false,
-		interlockedSlides: false,
-		dragAndMove: false,
-		offsetSections: false,
-		resetSliders: false,
-		fadingEffect: false,
-		normalScrollElements: '#element1, .element2',
-		scrollOverflow: false,
-		scrollOverflowReset: false,
-		scrollOverflowOptions: null,
-		touchSensitivity: 15,
-		normalScrollElementTouchThreshold: 5,
-		bigSectionsDestination: null,
-
-		//Accessibility
-		keyboardScrolling: true,
-		animateAnchor: true,
-		recordHistory: true,
-
-		//Design
-		controlArrows: true,
-		verticalCentered: true,
-		sectionsColor : ['#ccc', '#fff'],
-		paddingTop: '3em',
-		paddingBottom: '10px',
-		fixedElements: '#header, .footer',
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		responsiveSlides: false,
-		parallax: false,
-		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-		//Custom selectors
-		sectionSelector: '.section',
-		slideSelector: '.slide',
-
-		lazyLoading: true,
-
-		//events
-		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
-		afterRender: function(){},
-		afterResize: function(){},
-		afterResponsive: function(isResponsive){},
-		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
 	});
+
+});
+
+
+jQuery('#cody-info ul li').eq(1).on('click', function(){
+$('#cody-info').hide();
 });

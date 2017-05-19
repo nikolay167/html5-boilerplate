@@ -13,18 +13,21 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-
+    <link href="css/hover.css" rel="stylesheet" media="all">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
+
     <header>
+      
         <nav>
+
             <ul>
+
                 <li><a id="about" href="#/about">About</a></li>
                 <li><a id="contact" href="#/contact">Contact</a></li>
-                <li><a id="home" href="#/home">Home</a></li>
+                <li><a id="plans" href="#/plans">Plans</a></li>
             </ul>
         </nav>
     </header>
@@ -36,11 +39,14 @@
           <source src="videos/home-transcode.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
+
         <div class="copy">
+
             <h1 class="tagline">Let us look after your home.</h1>
             <div class="subtitle">Introducing an easy and affordable cloud security service to protect your home.
                 <br>You can use any camera you own to keep your home safe.</div>
-            <div class="actions"><a class="cta w-button" href="https://xn--d1ajkfcigi.ru.com/oko/1/">TRY FOR FREE</a><a class="_2 cta w-button" href="https://xn--d1ajkfcigi.ru.com/oko/1/">LEARN MORE</a>
+
+            <div class="actions"><a class="hvr-rectangle-in" href="https://xn--d1ajkfcigi.ru.com/oko/1/">TRY FOR FREE</a><a class="hvr-rectangle-in2" href="https://xn--d1ajkfcigi.ru.com/oko/1/">LEARN MORE</a>
             </div>
         </div>
     </section>
@@ -58,17 +64,17 @@
                     <li class="last">Usage Limits:</li>
                 </ul>
             </div>
-            <div class="pt-table" >
+            <div class="pt-table">
                 <div class="pt-body">
                     <ul class="pt-rows">
-                        <li class="title"><span>Basic</span><span>Premeium </span><span>Luxury</span><span>Ultra-Luxury</span></li>
+                        <li class="title"><span>Basic</span><span>Premium </span><span>Luxury</span><span>Ultra-Luxury</span></li>
                         <li class="fees"><span>$3</span><span>$6</span><span>$14</span><span>$30</span></li>
-                        <li><span>2 week </span><span>month</span><span>6 month</span><span></span></li>
+                        <li><span>2 week </span><span>month</span><span>6 month</span><span>12 month</span></li>
                         <li><span>included</span><span> Included</span><span> Included</span><span>Included</span></li>
-                        <li><span>included(5SMS)</span><span> included(50SMS)</span><span>included(200SMS)</span><span class="pt-yes"></span></li>
-                        <li><span>+</span><span class="pt-no">+</span><span class="pt-no">+</span><span class="pt-yes"></span></li>
-                        <li><span class="pt-no">1 ip camera</span><span>1 ip camera</span><span>1 ip camera</span><span>ip camera</span></li>
-                        <li class="fin"><span class="pt-3x"><a href="./products" class="big-button">Browse Our Products</a></span></li>
+                        <li><span>included(5SMS)</span><span> included(50SMS)</span><span>included(200SMS)</span><span class="pt-yes">included(400SMS)</span></li>
+                        <li><span>+</span><span class="pt-no">+</span><span class="pt-no">+</span><span class="pt-yes">+</span></li>
+                        <li><span class="pt-no">1 ip camera</span><span>1 ip camera</span><span>1 ip camera</span><span>1 ip camera</span></li>
+
                     </ul>
                 </div>
             </div>
@@ -86,6 +92,7 @@
         <article>
             <h1>Our Fetures </h1>
             <p>
+
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
                 content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
                 Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
@@ -96,27 +103,35 @@
                     <li type="square">Well thoughof UI an UX interface </li>
                     <li type="square">Support for many p2p providers </li>
 
+
                 </ul>
+
             </p>
+            <a href="#0" class="cd-top">Top</a>
         </article>
+
     </section>
 
+
 </html>
+
 <footer>
-  <div class="form-container">
-    <div class="background-right"></div>
-    <div class="background-top"></div>
-    <form id="form" class="topBefore">
+    <div class="form-container" id="form-container">
 
-        <input id="name" type="text" placeholder="NAME">
-        <input id="email" type="text" placeholder="E-MAIL">
-        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-        <input id="submit" type="submit" value="GO!">
+        <form id="form" class="topBefore">
 
-    </form>
-  </div>
-  </div>
+            <input id="name" type="text" placeholder="NAME">
+            <input id="email" type="text" placeholder="E-MAIL">
+            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+            <input id="submit" type="submit" value="GO!">
+
+        </form>
+    </div>
+
+    </div>
+
 </footer>
+
 <!--  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.js"><\/script>')</script> -->
 <script src="js/vendor/jquery-3.2.1.js"></script>
@@ -129,10 +144,9 @@
 <script src="vendors/jquery.easings.min.js"></script>
 
 
-<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>

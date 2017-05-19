@@ -1,551 +1,612 @@
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
- html, body, div, span, applet, object, iframe,
- h1, h2, h3, h4, h5, h6, p, blockquote, pre,
- a, abbr, acronym, address, big, cite, code,
- del, dfn, em, img, ins, kbd, q, s, samp,
- small, strike, strong, sub, sup, tt, var,
- b, u, i, center,
- dl, dt, dd, ol, ul, li,
- fieldset, form, label, legend,
- table, caption, tbody, tfoot, thead, tr, th, td,
- article, aside, canvas, details, embed,
- figure, figcaption, footer, header, hgroup,
- menu, nav, output, ruby, section, summary,
- time, mark, audio, video {
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: inherit;
-     vertical-align: baseline;
- }
- /* HTML5 display-role reset for older browsers */
- article, aside, details, figcaption, figure,
- footer, header, hgroup, menu, nav, section {
-     display: block;
- }
- body {
-     line-height: 1;
- }
- ol, ul {
-     list-style: none;
- }
- blockquote, q {
-     quotes: none;
- }
- blockquote:before, blockquote:after,
- q:before, q:after {
-     content: '';
-     content: none;
- }
- table {
-     border-collapse: collapse;
-     border-spacing: 0;
- }
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+
+body {
+ line-height: 1;
+}
+
+ol, ul {
+ list-style: none;
+}
+
+blockquote, q {
+ quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+ content: '';
+ content: none;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+Base styles: opinionated defaults
+========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+ color: #222;
+ font-size: 1em;
+ line-height: 1.4;
 }
-
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+ background: #b3d4fc;
+ text-shadow: none;
 }
-
 /*
- * A better looking default horizontal rule
- */
+* A better looking default horizontal rule
+*/
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+ display: block;
+ height: 1px;
+ border: 0;
+ border-top: 1px solid #ccc;
+ margin: 1em 0;
+ padding: 0;
 }
-
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+audio, canvas, iframe, img, svg, video {
+ vertical-align: middle;
 }
-
 /*
- * Remove default fieldset styles.
- */
+* Remove default fieldset styles.
+*/
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+ border: 0;
+ margin: 0;
+ padding: 0;
 }
-
 /*
- * Allow only vertical resizing of textareas.
- */
+* Allow only vertical resizing of textareas.
+*/
 
 textarea {
-    resize: vertical;
+ resize: vertical;
 }
-
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+Browser Upgrade Prompt
+========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+ margin: 0.2em 0;
+ background: #ccc;
+ color: #000;
+ padding: 0.2em 0;
+}
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+
+body {
+ font-family: 'Montserrat', sans-serif;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   body {
-     font-family: 'Montserrat', sans-serif;
-   }
+header {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ width: 100%;
+ z-index: 9999;
+}
 
-   header {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     width: 100%;
-     z-index: 9999;
+header nav ul {
+ text-align: right;
+ list-style: none;
+ position: absolute;
+ top: 10px;
+ right: 10%;
+ font-size: 14px;
+ line-height: 20px;
+ margin-top: 10px;
+ background-color: transparent;
+ color: #fff;
+}
 
+header nav ul li {
+ display: inline-block;
+}
 
-   }
+header nav ul li a {
+ color: white;
+ text-decoration: none;
+ padding: 20px;
+}
 
-  header  nav ul {
-    text-align: right;
-    list-style: none;
-    position: absolute;
-    top: 10px;
-    right: 10%;
+section.video {
+ position: relative;
+}
 
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 10px;
-    background-color: transparent;
-    color: #fff;
-   }
+section.video video {
+ width: 100vw;
+ color: white;
+}
 
-    header nav ul li {
-     display: inline-block;
-
-   }
-
-   header nav ul li a{
-     color: white;
-     text-decoration: none;
-     padding: 20px;
-   }
-
-   section.video{
-     position: relative;
-   }
-
-   section.video video {
-
-       width: 100vw;
-        color: white;
-   }
-section.video .black-overlay{
-position: absolute;
-width: 100vw;
-height: 100%;
-background: rgba(0,0,0,0.45);
-
+section.video .black-overlay {
+ position: absolute;
+ width: 100vw;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.45);
 }
 
 section .price-chart h1 {
-  font-size: 48px;
-text-align: center;
-color:black;
-
+ font-size: 48px;
+ text-align: center;
+ color: black;
 }
 
- section.prototype h1{
-  font-size: 48px;
-  text-align: center;
-
+section.prototype h1 {
+ font-size: 48px;
+ text-align: center;
 }
 
 section.prototype .video-container {
-  float: left;
-  width: 25%;
-  display: block;
+ float: left;
+ width: 25%;
+ display: block;
 }
 
 section.prototype article {
-  float: left;
-  width: 75%;
-  display: block;
+ float: left;
+ width: 75%;
+ display: block;
 }
+
 section.prototype article p h1 {
-  font-size: 48px;
+ font-size: 48px;
 }
 
-section.prototype .video-container video{
-  position: absolute;
-     width: 212px;
-     height: 546px;
-     z-index: 1;
-     left: 46px;
-
-
+section.prototype .video-container video {
+ position: absolute;
+ width: 212px;
+ height: 546px;
+ z-index: 1;
+ left: 46px;
 }
+
 section.prototype img {
-  position: relative;
-  width: 303px;
-  height: 561px;
-
-
+ position: relative;
+ width: 303px;
+ height: 561px;
 }
+
 section.prototype {
-  background-image: url(../img/12.jpg);
-  height: 100vw;
-  padding-top: 100px;
-
-
+ background-image: url(../img/12.jpg);
+ height: 57vw;
+ padding-top: 100px;
 }
 
+section div.price-chart .attr-col {
+ margin: 110px 0 0;
+ float: left;
+ width: 200px;
+ font-family: 'Montserrat', sans-serif;
+}
 
-  section div.price-chart .attr-col { margin: 110px 0 0; float: left; width: 200px; }
-  section div.price-chart .attr-col ul { background: #f4f4f4; font-weight: bold; font-size: 13px; border: 1px solid #d6d6d6; border-width: 1px 0px 1px 1px; -webkit-border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-bottomleft: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
-  section div.price-chart .attr-col ul li { text-align: right; padding: 0 10px; border-bottom: 1px solid #d6d6d6; line-height: 45px; display: block; }
-  section div.price-chart .attr-col ul li.last { border-bottom: none; }
-  section div.price-chart .pt-table { padding-left: 200px; display: block; position: relative; }
-  section div.price-chart .pt-body { padding: 10px 0 0; }
-  section div.price-chart .pt-rows li { display: block; overflow: hidden;background: #fff; border-left: 2px solid #ccc; border-right: 2px solid #ccc; border-bottom: 1px solid #d9d9d9;  }
-  section div.price-chart .pt-rows li span { width: 24.8%; text-align: center; float: left; border-right: 1px solid #d9d9d9; display: block; line-height: 45px; height: 45px; }
-  section div.price-chart .pt-rows li.title { background: #666; font-size: 22px; color: #fff; font-weight: bold; -webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; border-top-left-radius: 5px; border-bottom: 2px solid #555; border-width: 0 0 2px; }
-  section div.price-chart .pt-rows li.title span { line-height: 50px; height: 50px; border: none; padding: 0 1px; text-shadow: 2px 2px #444; }
-  section div.price-chart .pt-rows li.fees { border-bottom: 1px solid #ccc; }
-  section div.price-chart .pt-rows li.fees span { line-height: 48px; height: 48px; background: #f7f7f7; font-size: 34px; font-weight: 700; font-family: Georgia, Arial, sans-serif; color: #4172a5; text-shadow: 2px 2px #fff; }
-  section div.price-chart .pt-rows li span.pt-yes { background: url(yes-no.gif) no-repeat center 12px; }
-  section div.price-chart .pt-rows li span.pt-no { background: url(yes-no.gif) no-repeat center -38px; }
-  section div.price-chart .pt-rows li.fin { border-bottom: 2px solid #d9d9d9; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 85px; }
-  section div.price-chart .pt-rows li span.pt-3x { width: 72%; float: left; text-align: center; border: none; }
-  section div.price-chart .pt-special { width: 23%; position: absolute; right: 0; top: 0; }
-  section div.price-chart .pt-special .pt-rows { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: 1px solid #a2b7ca; background: #f4faff;    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); padding-bottom: 10px; }
-  section div.price-chart .pt-special .pt-rows li { border-width: 0 0 1px; background: transparent; }
-  section div.price-chart .pt-special .pt-rows li.title { height: 58px; margin: 1px; background: #d0ebfe; color: #2a719d; font-size: 30px; line-height: 65px; text-align: center; border-bottom: 1px solid #bfd4e6; border-width: 0 0 1px; text-shadow: 2px 2px #e6f5ff; }
-  section div.price-chart .pt-special .pt-rows li.fees { border-bottom: 1px solid #bcd8ec; }
-  section div.price-chart .pt-special .pt-rows li.fees span { background: #ecf6fe; }
-  section div.price-chart .pt-special .pt-rows li.fin { border: none; text-align: center; }
-  section div.price-chart .pt-special .pt-rows li span { border: none; width: 100%; }
+section div.price-chart .attr-col ul {
+ background: #f4f4f4;
+ font-weight: bold;
+ font-size: 13px;
+ border: 1px solid #d6d6d6;
+ border-width: 1px 0px 1px 1px;
+ -webkit-border-top-left-radius: 5px;
+ -webkit-border-bottom-left-radius: 5px;
+ -moz-border-radius-topleft: 5px;
+ -moz-border-radius-bottomleft: 5px;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+}
 
+section div.price-chart .attr-col ul li {
+ text-align: right;
+ padding: 0 10px;
+ border-bottom: 1px solid #d6d6d6;
+ line-height: 45px;
+ display: block;
+}
 
-  /* Simple Button CSS: */
-  .big-button { font-size: 24px; line-height: 50px; font-weight: 700; color: #fff; padding: 10px 20px; background: #4a980d; text-shadow: 2px 2px rgba(0, 0, 0, 0.3); border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #407718; text-decoration: none; position: relative; top: 18px; }
-  .big-button:hover { color: #fff; -moz-box-shadow: 0 0 20px #fffc00; -webkit-box-shadow: 0 0 20px #fffc00; box-shadow: 0 0 20px #fffc00; background: #6fbb2f; }
-  .big-button:active { position: relative; top: 1px; }
+section div.price-chart .attr-col ul li.last {
+ border-bottom: none;
+}
 
-  /* MY BUTTONS ON THE TOP */
+section div.price-chart .pt-table {
+ padding-left: 200px;
+ display: block;
+ position: relative;
+}
+
+section div.price-chart .pt-body {
+ padding: 10px 0 0;
+}
+
+section div.price-chart .pt-rows li {
+ display: block;
+ overflow: hidden;
+ background: #fff;
+ border-left: 2px solid #ccc;
+ border-right: 2px solid #ccc;
+ border-bottom: 1px solid #d9d9d9;
+}
+
+section div.price-chart .pt-rows li span {
+ width: 24.8%;
+ text-align: center;
+ float: left;
+ border-right: 1px solid #d9d9d9;
+ display: block;
+ line-height: 45px;
+ height: 45px;
+}
+
+section div.price-chart .pt-rows li.title {
+ background: #666;
+ font-size: 22px;
+ color: #fff;
+ font-weight: bold;
+ -webkit-border-top-left-radius: 5px;
+ -moz-border-radius-topleft: 5px;
+ border-top-left-radius: 5px;
+ border-bottom: 2px solid #555;
+ border-width: 0 0 2px;
+}
+
+section div.price-chart .pt-rows li.title span {
+ line-height: 50px;
+ height: 50px;
+ border: none;
+ padding: 0 1px;
+ text-shadow: 2px 2px #444;
+}
+
+section div.price-chart .pt-rows li.fees {
+ border-bottom: 1px solid #ccc;
+}
+
+section div.price-chart .pt-rows li.fees span {
+ line-height: 48px;
+ height: 48px;
+ background: #f7f7f7;
+ font-size: 34px;
+ font-weight: 700;
+ font-family: Georgia, Arial, sans-serif;
+ color: #4172a5;
+ text-shadow: 2px 2px #fff;
+}
+
+section div.price-chart .pt-rows li span.pt-yes {
+ background: url(yes-no.gif) no-repeat center 12px;
+}
+
+section div.price-chart .pt-rows li span.pt-no {
+ background: url(yes-no.gif) no-repeat center -38px;
+}
+
+section div.price-chart .pt-rows li.fin {
+ border-bottom: 2px solid #d9d9d9;
+ -webkit-border-bottom-right-radius: 5px;
+ -webkit-border-bottom-left-radius: 5px;
+ -moz-border-radius-bottomright: 5px;
+ -moz-border-radius-bottomleft: 5px;
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
+ height: 85px;
+}
+
+section div.price-chart .pt-rows li span.pt-3x {
+ width: 72%;
+ float: left;
+ text-align: center;
+ border: none;
+}
+
+section div.price-chart .pt-special {
+ width: 23%;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
+section div.price-chart .pt-special .pt-rows {
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border: 1px solid #a2b7ca;
+ background: #f4faff;
+ -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ padding-bottom: 10px;
+}
+
+section div.price-chart .pt-special .pt-rows li {
+ border-width: 0 0 1px;
+ background: transparent;
+}
+
+section div.price-chart .pt-special .pt-rows li.title {
+ height: 58px;
+ margin: 1px;
+ background: #d0ebfe;
+ color: #2a719d;
+ font-size: 30px;
+ line-height: 65px;
+ text-align: center;
+ border-bottom: 1px solid #bfd4e6;
+ border-width: 0 0 1px;
+ text-shadow: 2px 2px #e6f5ff;
+}
+
+section div.price-chart .pt-special .pt-rows li.fees {
+ border-bottom: 1px solid #bcd8ec;
+}
+
+section div.price-chart .pt-special .pt-rows li.fees span {
+ background: #ecf6fe;
+}
+
+section div.price-chart .pt-special .pt-rows li.fin {
+ border: none;
+ text-align: center;
+}
+
+section div.price-chart .pt-special .pt-rows li span {
+ border: none;
+ width: 100%;
+}
+/* MY BUTTONS ON THE TOP */
 
 .tagline {
-    display: block;
-    margin: 0px auto;
-    padding: 10px;
-    font-family: Montserrat, sans-serif;
-    font-size: 60px;
-    line-height: 70px;
-    text-align: center;
+ display: block;
+ margin: 0px auto;
+ padding: 10px;
+ font-family: Montserrat, sans-serif;
+ font-size: 60px;
+ line-height: 70px;
+ text-align: center;
 }
-.cta {
-    margin-right: 2px;
-    margin-left: 4px;
-    padding-right: 25px;
-    padding-left: 25px;
-    border: 2px solid #3898ec;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-    font-family: Montserrat, sans-serif;
-}
-.w-button {
-    display: inline-block;
-    padding: 9px 15px;
-    background-color: #3898EC;
-    color: white;
-    border: 0;
-    line-height: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 0;
-}
-
 
 section.video .copy {
-  position: absolute;
-      top: 38%;
-      color: white;
-      right: 29%;
-      /* font-size: 60px; */
-      line-height: 22px;
+ position: absolute;
+ top: 38%;
+ color: white;
+ right: 29%;
+ /* font-size: 60px; */
+ line-height: 22px;
 }
 /* section {
-    height: 100vh;
+height: 100vh;
 } */
 
 section div.price-chart {
-    margin-right: 90px;
-
+ margin-right: 90px;
+ color: black;
 }
+
 section div.pt-table {
-    margin-top: 142px;
-
+ margin-top: 151px;
 }
+
 section div.attr-col ul {
-    margin-top: 150px;
-    margin-left: 40px;
-
+ margin-top: 150px;
+ margin-left: 40px;
 }
-.form-container {
-    padding: 200px 0;
-    padding-bottom: 0;
-    background-image: url(../img/guy-pointing.jpg);
-    background-color: grey;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-        margin-right: -12px;
 
+footer div.form-container {
+ padding: 340px 713px;
+ padding-bottom: 0;
+ background: url(../img/guy-pointing.jpg) bottom left no-repeat, url(../img/new.jpg) bottom right no-repeat, url(../img/new2.jpg) top no-repeat;
+ margin-right: 0px;
+ margin: 0px;
 }
-.background-right {
-    padding: 200px 0;
-    padding-bottom: 0;
-    background-image: url(../img/new.jpg);
-    background-color: green;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-        margin-right: -12px;
 
+form#form {
+ position: relative;
+ width: 500px;
+ margin: 0px;
 }
-.background-top {
-    padding: 200px 0;
-    padding-bottom: 0;
-    background-image: url(../img/new2.jpg);
-    background-color: yellow;
-    background-repeat: no-repeat;
-    background-position:top;
-        margin-right: -12px;
 
-}
 h1 {
-    padding-top: 62px;
+ padding-top: 62px;
 }
+
+section {
+ background-color: whitesmoke;
+}
+
 section .price-chart {
-    height: 100vh;
+ height: 100vh;
+ background-color: whitesmoke;
+ section.arrow {
+     position: absolute;
+     bottom: 50px;
+     left: 50%;
+     margin-left: -20px;
+     width: 20px;
+     height: 20px;
+     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+     background-size: contain;
+ }
+ .bounce {
+     -moz-animation: bounce 2s infinite;
+     -webkit-animation: bounce 2s infinite;
+     animation: bounce 2s infinite;
+ }
+article.ul a .cd-top {
+
+text-decoration: none;
+color: orange;
+font-size: 40px;
+
 }
 
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    clip-path: none;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    p:first-letter,
-    div:first-letter,
-    blockquote:first-letter,
-    li:first-letter,
-    p:first-line,
-    div:first-line,
-    blockquote:first-line,
-    li:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+ /* ==========================================================================
+Helper classes
+========================================================================== */
+ /*
+* Hide visually and from screen readers
+*/
+ .hidden {
+     display: none !important;
+ }
+ /*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+ .visuallyhidden {
+     border: 0;
+     clip: rect(0 0 0 0);
+     clip-path: inset(50%);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     width: 1px;
+     white-space: nowrap;
+     /* 1 */
+ }
+ /*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+ .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+     clip: auto;
+     clip-path: none;
+     height: auto;
+     margin: 0;
+     overflow: visible;
+     position: static;
+     width: auto;
+     white-space: inherit;
+ }
+ /*
+* Hide visually and from screen readers, but maintain layout
+*/
+ .invisible {
+     visibility: hidden;
+ }
+ /*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+ .clearfix:before, .clearfix:after {
+     content: " ";
+     /* 1 */
+     display: table;
+     /* 2 */
+ }
+ .clearfix:after {
+     clear: both;
+ }
+ /* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+ @media only screen and (min-width: 35em) {
+     /* Style adjustments for viewports that meet the condition */
+ }
+ @media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+     /* Style adjustments for high resolution devices */
+ }
+ /* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+http://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+ @media print {
+     *, *:before, *:after, p:first-letter, div:first-letter, blockquote:first-letter, li:first-letter, p:first-line, div:first-line, blockquote:first-line, li:first-line {
+         background: transparent !important;
+         color: #000 !important;
+         /* Black prints faster:
+                            http://www.sanbeiji.com/archives/953 */
+         box-shadow: none !important;
+         text-shadow: none !important;
+     }
+     a, a:visited {
+         text-decoration: underline;
+     }
+     a[href]:after {
+         content: " (" attr(href) ")";
+     }
+     abbr[title]:after {
+         content: " (" attr(title) ")";
+     }
+     /*
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
+     a[href^="#"]:after, a[href^="javascript:"]:after {
+         content: "";
+     }
+     pre {
+         white-space: pre-wrap !important;
+     }
+     pre, blockquote {
+         border: 1px solid #999;
+         page-break-inside: avoid;
+     }
+     /*
+* Printing Tables:
+* http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
+     thead {
+         display: table-header-group;
+     }
+     tr, img {
+         page-break-inside: avoid;
+     }
+     p, h2, h3 {
+         orphans: 3;
+         widows: 3;
+     }
+     h2, h3 {
+         page-break-after: avoid;
+     }
+ }
